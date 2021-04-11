@@ -1,6 +1,9 @@
 require 'tty-prompt'
 require 'colorize'
 
+require_relative '../game_menu.rb'
+require_relative '../levels/quiz_usa.rb'
+
     puts "Lets Go!"
 
     score = 0

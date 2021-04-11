@@ -4,7 +4,6 @@ require 'tty-prompt'
 class CommandLineInterFace
     def run 
         prompt = TTY::Prompt.new
-        system("clear")
         welcome = prompt.select("Hello! Welcome to Tim's Journey Around the World!") do |menu|
             menu.choice 'Start'
             menu.choice 'Instructions'
@@ -13,7 +12,7 @@ class CommandLineInterFace
         end
 
         if welcome == 'Start'
-            game_start
+            quiz_start
         elsif welcome == 'Instructions'
             game_instructions
         elsif welcome == 'About'

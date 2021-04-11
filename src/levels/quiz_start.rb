@@ -1,6 +1,9 @@
 require 'tty-prompt'
 require 'colorize'
 
+require_relative '../levels/quiz_jpn.rb'
+require_relative '../levels/quiz_start.rb'
+
     puts "Lets Go!"
 
     score = 0

@@ -40,6 +40,15 @@ Tim's Journey Around the World will be launched from the command line using the 
 
 ## User interaction and experience
 
+The user is displayed with the menu screen which they are able to select one of the options and will be directed  to the appropriate area.
+
+When the user may want to know how to play the game before playing, so they will select the "Instructions" option. The user twill be directed to an instructions line clearing the previous command line. 
+
+Once the user is ready to play, they will return to the menu and select the "Start" option. At the start of the game the user is greeted by Tim who he will start the game.
+
+The user will receive 4 questions in each country they are in. Each questions answered correctly will give the player a point and once the player have 3 or more points, they can proceed to the next area. If not they are to restart the level again. When the player reach the end of the game after 4 areas, the terminal will close. 
+
+
 #
 
 # Control Flow
@@ -59,6 +68,8 @@ Once my concept was accepted, I built a Trello board to help me break down the m
 
 ## Testing 
 
+Testing were done however, there were minor issues which couldn't display anything from the code.
+
 #
 ## Help documentation
 
@@ -77,11 +88,22 @@ $ install bundler
 - In the terminal type in the below folders 
 
 ```ruby
-cd src/start
+cd src/game_menu
 ```
 - To activate the game enter the below. Make sure your volume is turned on for more personalised experience. 
 
 
 ```ruby
-ruby timsjourney.rb
+ruby game_menu.rb
 ```
+## Dependencies 
+
+Words of fortune utilise the following gems that are  Mac dependent and will not function on other operating systems.
+
+The following Ruby Gems are required and are included in the Gemfile.
+
+- gem "colorize", "~> 0.8.1"
+
+- gem "tty", "~> 0.7.0"
+
+#

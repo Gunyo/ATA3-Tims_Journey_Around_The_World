@@ -2,19 +2,19 @@
 
 ## Purpose & Scope
 
-##### Purpose: 
+### **Purpose:** 
 
 Tim is set on an adventure to explore the vast world we live in. We follow Tim as he discovers places he has never been but do you know what it is? The game is a fun Geography terminal application game, to test our knowledge on how much do we know about our world. Players are given questions on the country they are in and earn points to proceed to the next country. 
 
-##### Problem: 
+### **Problem:**
 
 Many people know that specifically the people from the US, they are known to be bad in geography. As of early 2020 A recent poll found only 28% (*Morning Consult US*) of registered voters could pick out Iran on a map. Since its considered "When will I need this in my life?", not just the US that many people struggle with Geography but there are many of us that still don't know where The Stonehenge is located for example.Tim's Journey Around the World solve this problem by helping users understand the uniqueness of places, as well as of the similarities between them.
 
-##### Target Audience:
+### **Target Audience:**
 
 Tim's Journey Around the World will be enjoyed by everyone. Given the topic is not overly complicated and fun at the same time was designed for personal entertainment. Moreover, this application may very be used for educational purpose as it is user friendly and the theme circulates a kids theme.
 
-##### Target Audience Usage:
+### **Target Audience Usage:**
 
 Tim's Journey Around the World will be launched from the command line using the files listed in the installation section of this README.md document. 
 
@@ -32,6 +32,56 @@ Tim's Journey Around the World will be launched from the command line using the 
 
 - Users can save their current session and leave so when they come back, they are able to continue where they left off.
  
-3. Play Music on each country
+3. Sound Effects
 
-- The music feature sets the ambience of the country the user is currently in, this enable sense of location in a physiological way to help users to engage and help them solve the questions.
+- Sound Effects will be played throughout the application, when user get answer correct or false. It will also display the sound when the user enters a new country with with enough points accumulated. 
+
+# 
+
+## User interaction and experience
+
+#
+
+# Control Flow
+![control-flow](./img/control_flow.png)
+
+#
+
+## Implementation plan
+
+Once my concept was accepted, I built a Trello board to help me break down the major components of the assignment requirements: documentation, coding, and presentation. The Trello board contains a schedule for the upcoming days of activities that I have divided into various categories to help me control my workload. Once setting up the Trello Board, I was then able to have a concrete plan and idea on what to expect of my terminal application will be without any side tracks. By implementing the flow chart as well as the Trello board, I was able to stay on track to finish this before the deadline by allocating each work to my schedule and marking it as completed.
+
+### [Trello Board](https://trello.com/b/Y1djURrA/tims-journey-around-the-world-app)
+
+![Trello](./img/trello.png)
+
+#
+
+## Testing 
+
+#
+## Help documentation
+
+## Install the application
+
+- If you do not have Ruby on your computer, follow these instructions to [download and install](https://www.Gunyo.org/en/documentation/installation/)
+
+- Clone the project files onto your computer from the source code here: https://github.com/Gunyo/ATA3-Tims_Journey_Around_The_World
+
+- On the terminal command line, navigate to the ATA3-Tims_Journey_Around_The_World directory you have just cloned.
+- If you do not have the 'bundler' gem installed on your computer, please enter the following code.
+ 
+```ruby
+$ install bundler
+```
+- In the terminal type in the below folders 
+
+```ruby
+cd src/start
+```
+- To activate the game enter the below. Make sure your volume is turned on for more personalised experience. 
+
+
+```ruby
+ruby timsjourney.rb
+```

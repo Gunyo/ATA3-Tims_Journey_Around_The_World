@@ -55,22 +55,22 @@ def quiz_start
     end
 
     sleep(1)
-    puts "Lets see how well you have done."
+    puts "Lets see how well you have done.".colorize(:light_green)
     if score == 4
-      puts "You got #{score} out of 4 correct! That's awesome!"
+      puts "You got #{score} out of 4 correct! That's awesome!".colorize(:light_green)
       puts ""
-      puts "Next stop, Japan!"
-      sleep(1)
+      puts "Next stop, Japan!".colorize(:light_green)
+      sleep(2)
       quiz_jpn
     elsif score > 1
-      puts "You got #{score} out of 4 correct! Not bad!"
+      puts "You got #{score} out of 4 correct! Not bad!".colorize(:light_green)
       puts ""
-      puts "Next stop, Japan!"
-      sleep(1)
+      puts "Next stop, Japan!".colorize(:light_green)
+      sleep(2)
       quiz_jpn
     else
-      puts "You got #{score} correct! Lets start over!"
-      system("clear")
+      puts "You got #{score} correct! Lets start over!".colorize(:light_red)
+      sleep(1.5)
       quiz_start
     end
 end

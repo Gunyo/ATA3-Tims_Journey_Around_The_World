@@ -74,8 +74,9 @@ def quiz_usa
       puts "Lets see eachother again! See ya!"
       print "Press enter to go back to menu"
       gets
-      puts "You got #{score} correct! Lets start over!"
-      system("clear")
+    else
+      puts "You got #{score} correct! Lets start over!".colorize(:light_red)
+      sleep(2)
       quiz_usa
     end
 end

@@ -1,8 +1,12 @@
 require 'tty-prompt'
 require 'colorize'
 
+system("clear")
+
 def quiz_jpn
-    puts "Lets Go!"
+
+  system("clear")
+  puts "Lets Go!"
 
     score = 0
 
@@ -41,7 +45,7 @@ def quiz_jpn
 
     prompt = TTY::Prompt.new
     greeting = 'Which character did Japan create?'
-    choices = %w(Donald Duck, Elmo, Mario, Gaz)
+    choices = ["Donald Duck", "Elmo", "Mario", "Gaz"]
     answer = prompt.select(greeting, choices)
     if answer == choices[2]
       puts "That's correct! Good job!"
@@ -56,13 +60,13 @@ def quiz_jpn
       puts "You got #{score} out of 4 correct! That's awesome!"
       puts ""
       puts "Next stop, England!"
-      sleep(0.5)
+      sleep(1)
       quiz_eng
     elsif score > 1
       puts "You got #{score} out of 4 correct! Not bad!"
       puts ""
       puts "Next stop, England!"
-      sleep(0.5)
+      sleep(1)
       quiz_eng
     else
       puts "You got #{score} correct! Lets start over!"

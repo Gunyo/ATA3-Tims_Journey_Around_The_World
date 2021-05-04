@@ -1,8 +1,12 @@
 require 'tty-prompt'
 require 'colorize'
 
+system("clear")
+
 def quiz_eng
-    puts "Lets Go!"
+
+  system("clear")
+  puts "Lets Go!"
 
     score = 0
 
@@ -19,7 +23,7 @@ def quiz_eng
 
     prompt = TTY::Prompt.new
     greeting = 'Which of these are a Wolrd Heritage site in England?'
-    choices = %w(Mt Juji, Stonehenge, London Bridge, Eifel Tower)
+    choices = ["Mt Juji", "Stonehenge", "London Bridge", "Eifel Tower"]
     answer = prompt.select(greeting, choices)
     if answer == choices[1]
       puts "That's correct! Good job!"
@@ -56,13 +60,13 @@ def quiz_eng
       puts "You got #{score} out of 4 correct! That's awesome!"
       puts ""
       puts "Next stop, United States of America!"
-      sleep(0.5)
+      sleep(1)
       quiz_usa
     elsif score > 1
       puts "You got #{score} out of 4 correct! Not bad!"
       puts ""
       puts "Next stop, United States of America!"
-      sleep(0.5)
+      sleep(1)
       quiz_usa
     else
       puts "You got #{score} correct! Lets start over!"

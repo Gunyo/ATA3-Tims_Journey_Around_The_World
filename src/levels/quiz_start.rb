@@ -1,7 +1,11 @@
 require 'tty-prompt'
 require 'colorize'
 
+system("clear")
+
 def quiz_start
+
+  system("clear")
   puts "Lets Go!"
 
   score = 0
@@ -19,7 +23,7 @@ def quiz_start
 
     prompt = TTY::Prompt.new
     greeting = 'What is Australia''s biggest coral reef called?'
-    choices = %w(Great Barrier Reef, Marina Trenches, Kingman Reef, Landsdown Bank)
+    choices = ["Great Barrier Reef", "Marina Trenches", "Kingman Reef", "Landsdown Bank"]
     answer = prompt.select(greeting, choices)
     if answer == choices[0]
       puts "That's correct! Good job!"
@@ -41,7 +45,7 @@ def quiz_start
 
     prompt = TTY::Prompt.new
     greeting = 'Where is the largest sand island located in Australia'
-    choices = %w(North Stradbrok Island, Fraser Island, Moreton Island, Snake Island)
+    choices = ["North Stradbrok Island", "Fraser Island", "Moreton Island", "Snake Island"]
     answer = prompt.select(greeting, choices)
     if answer == choices[1]
       puts "That's correct! Good job!"
@@ -56,13 +60,13 @@ def quiz_start
       puts "You got #{score} out of 4 correct! That's awesome!"
       puts ""
       puts "Next stop, Japan!"
-      sleep(0.5)
+      sleep(1)
       quiz_jpn
     elsif score > 1
       puts "You got #{score} out of 4 correct! Not bad!"
       puts ""
       puts "Next stop, Japan!"
-      sleep(0.5)
+      sleep(1)
       quiz_jpn
     else
       puts "You got #{score} correct! Lets start over!"

@@ -1,14 +1,18 @@
 require 'tty-prompt'
 require 'colorize'
 
+system("clear")
+
 def quiz_usa
+
+    system("clear")
     puts "Lets Go!"
 
     score = 0
 
     prompt = TTY::Prompt.new
     greeting = 'What is the capital city of America'
-    choices = %w(New York, Los Angeles, California, Washington DC)
+    choices = ["New York", "Los Angeles", "California", "Washington DC"]
     answer = prompt.select(greeting, choices)
     if answer == choices[3]
       puts "That's correct! Good job!"
@@ -19,7 +23,7 @@ def quiz_usa
 
     prompt = TTY::Prompt.new
     greeting = 'What is New York also refered to as?'
-    choices = %w(Big Banana, Big Pineapple, Big apple, Big Everything)
+    choices = ["Big Banana", "Big Pineapple", "Big apple", "Big Everything"]
     answer = prompt.select(greeting, choices)
     if answer == choices[2]
       puts "That's correct! Good job!"
@@ -41,7 +45,7 @@ def quiz_usa
 
     prompt = TTY::Prompt.new
     greeting = 'Which is these is the USA in?'
-    choices = %w(South America, North America, West America, East America)
+    choices = ["South America", "North America", "West America", "East America"]
     answer = prompt.select(greeting, choices)
     if answer == choices[1]
       puts "That's correct! Good job!"
@@ -59,8 +63,8 @@ def quiz_usa
       puts ""
       puts "For now!"
       puts "Lets see eachother again! See ya!"
-      sleep(0.5)
-      game_menu
+      print "Press enter to go back to menu"
+      gets
     elsif score > 1
       puts "You got #{score} out of 4 correct! Not bad!"
       puts ""
@@ -68,8 +72,8 @@ def quiz_usa
       puts ""
       puts "For now!"
       puts "Lets see eachother again! See ya!"
-      sleep(0.5)
-      game_menu
+      print "Press enter to go back to menu"
+      gets
       puts "You got #{score} correct! Lets start over!"
       system("clear")
       quiz_usa

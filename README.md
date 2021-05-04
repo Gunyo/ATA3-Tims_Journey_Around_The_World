@@ -48,6 +48,7 @@ Once the user is ready to play, they will return to the menu and select the "Sta
 
 The user will receive 4 questions in each country they are in. Each questions answered correctly will give the player a point and once the player have 3 or more points, they can proceed to the next area. If not they are to restart the level again. When the player reach the end of the game after 4 areas, the terminal will close. 
 
+Within the application the user may expect to receive error. This could be not installing the gems correctly, which effects the entire application because it requires specific gems to run. Furthermore, if the user inputs a random sets of letters and numbers, the the application will output an error as it is not handled for such instances.   
 
 #
 

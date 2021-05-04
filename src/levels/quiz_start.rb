@@ -59,13 +59,13 @@ def quiz_start
     if score == 4
       puts "You got #{score} out of 4 correct! That's awesome!".colorize(:light_green)
       puts ""
-      puts "Next stop, Japan!".colorize(:light_green)
+      puts "Next stop, Japan!".colorize(:light_blue)
       sleep(2)
       quiz_jpn
     elsif score > 1
       puts "You got #{score} out of 4 correct! Not bad!".colorize(:light_green)
       puts ""
-      puts "Next stop, Japan!".colorize(:light_green)
+      puts "Next stop, Japan!".colorize(:light_blue)
       sleep(2)
       quiz_jpn
     else

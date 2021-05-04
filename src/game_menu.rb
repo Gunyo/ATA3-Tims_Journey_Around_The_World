@@ -8,6 +8,9 @@ require_relative './levels/quiz_jpn'
 require_relative './levels/quiz_eng'
 require_relative './levels/quiz_usa'
 
+app = true
+while app
+  system("clear")
   prompt = TTY::Prompt.new
   welcome = prompt.select("Hello! Welcome to Tim's Journey Around the World!") do |menu|
     menu.choice 'Start'
@@ -22,9 +25,12 @@ require_relative './levels/quiz_usa'
     instructions
   elsif welcome == 'About'
     about
-  else
+  elsif welcome == 'Exit'
+    sleep(0.5)
     puts 'Goodbye'
+    app = false
   end
+end
 
 if ARGV.include? "help"
   puts "Select Instructions on how to play the game"

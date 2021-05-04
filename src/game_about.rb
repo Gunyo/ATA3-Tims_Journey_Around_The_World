@@ -9,6 +9,6 @@ def about
   puts "How well do you know about the world we live in?".colorize(:light_blue)
   puts ""
   puts "Lets find out!".colorize(:light_blue)
-  print "Press enter to go back to menu"
+  print "Press 'enter' to go back to menu"
   gets
 end

@@ -58,7 +58,17 @@ The user will receive 4 questions in each country they are in. Each questions an
 
 ## Implementation plan
 
-Once my concept was accepted, I built a Trello board to help me break down the major components of the assignment requirements: documentation, coding, and presentation. The Trello board contains a schedule for the upcoming days of activities that I have divided into various categories to help me control my workload. Once setting up the Trello Board, I was then able to have a concrete plan and idea on what to expect of my terminal application will be without any side tracks. By implementing the flow chart as well as the Trello board, I was able to stay on track to finish this before the deadline by allocating each work to my schedule and marking it as completed.
+#### Feature 1: Quiz Point System
+- Players will earn point upon answering the correct answer for each question. (priority 2)
+1. Right up the Questions: Create a method where each countries questions are stored for the main.rb can pull from.  - due 11.04
+2. Create Points method: Implement a 'if, elsif' statements so that when the player makes a correct answer it will add a point to a class. - due 11.04
+3. Create a method that if the player has enough points, proceed to next area: Following with the previous points system, implement a 'if, elsif' statement when a player is equal the certain number needed, they can proceed to the next country (next sort of questions) - due 11.04
+
+#### Feature 2: Menu
+- Players will be shown a menu before proceeding to play the game. (priority 1)
+1. About info: Create a method, where it 'puts' out a message on what the game is about. - due 11.04
+2. Instructions: Create a method, where it 'puts' out a message on how to play the game. - due 11.04
+3. Start Game: Create a method starting the questions - due 11.04
 
 ### [Trello Board](https://trello.com/b/Y1djURrA/tims-journey-around-the-world-app)
 
@@ -75,7 +85,7 @@ Testing were done however, there were minor issues which couldn't display anythi
 
 ## Install the application
 
-- If you do not have Ruby on your computer, follow these instructions to [download and install](https://www.Gunyo.org/en/documentation/installation/)
+- If you do not have Ruby on your computer, follow these instructions to [download and install](https://www.ruby-lang.org/en/documentation/installation/)
 
 - Clone the project files onto your computer from the source code here: https://github.com/Gunyo/ATA3-Tims_Journey_Around_The_World
 

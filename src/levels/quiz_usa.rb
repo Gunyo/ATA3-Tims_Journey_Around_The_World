@@ -1,9 +1,7 @@
 require 'tty-prompt'
 require 'colorize'
 
-require_relative '../game_menu.rb'
-require_relative '../levels/quiz_usa.rb'
-
+def quiz_usa
     puts "Lets Go!"
 
     score = 0
@@ -13,11 +11,10 @@ require_relative '../levels/quiz_usa.rb'
     choices = %w(New York, Los Angeles, California, Washington DC)
     answer = prompt.select(greeting, choices)
     if answer == choices[3]
-        puts "That's correct! Good job!"
-        score += 1
-      else
-        puts "Sorry, the correct answer is #{choices[3]}."
-      end
+      puts "That's correct! Good job!"
+      score += 1
+    else
+      puts "Sorry, the correct answer is #{choices[3]}."
     end
 
     prompt = TTY::Prompt.new
@@ -25,11 +22,10 @@ require_relative '../levels/quiz_usa.rb'
     choices = %w(Big Banana, Big Pineapple, Big apple, Big Everything)
     answer = prompt.select(greeting, choices)
     if answer == choices[2]
-        puts "That's correct! Good job!"
-        score += 1
-      else
-        puts "Sorry, the correct answer is #{choices[2]}."
-      end
+      puts "That's correct! Good job!"
+      score += 1
+    else
+      puts "Sorry, the correct answer is #{choices[2]}."
     end
 
     prompt = TTY::Prompt.new
@@ -37,11 +33,10 @@ require_relative '../levels/quiz_usa.rb'
     choices = %w(37 50 48 62)
     answer = prompt.select(greeting, choices)
     if answer == choices[1]
-        puts "That's correct! Good job!"
-        score += 1
-      else
-        puts "Sorry, the correct answer is #{choices[1]}."
-      end
+      puts "That's correct! Good job!"
+      score += 1
+    else
+      puts "Sorry, the correct answer is #{choices[1]}."
     end
 
     prompt = TTY::Prompt.new
@@ -49,37 +44,34 @@ require_relative '../levels/quiz_usa.rb'
     choices = %w(South America, North America, West America, East America)
     answer = prompt.select(greeting, choices)
     if answer == choices[1]
-        puts "That's correct! Good job!"
-        score += 1
-      else
-        puts "Sorry, the correct answer is #{choices[1]}."
-      end
+      puts "That's correct! Good job!"
+      score += 1
+    else
+      puts "Sorry, the correct answer is #{choices[1]}."
     end
 
     sleep(1)
     puts "Lets see how well you have done."
     if score == 4
-        puts "You got #{score} out of 4 correct! That's awesome!"
-        puts ""
-        puts "Thats the end of the Journey..."
-        puts ""
-        puts "For now!"
-        puts "Lets see eachother again! See ya!"
-        sleep(0.5)
-        game_menu
+      puts "You got #{score} out of 4 correct! That's awesome!"
+      puts ""
+      puts "Thats the end of the Journey..."
+      puts ""
+      puts "For now!"
+      puts "Lets see eachother again! See ya!"
+      sleep(0.5)
+      game_menu
     elsif score > 1
-        puts "You got #{score} out of 4 correct! Not bad!"
-        puts ""
-        puts "Thats the end of the Journey..."
-        puts ""
-        puts "For now!"
-        puts "Lets see eachother again! See ya!"
-        sleep(0.5)
-        game_menu
-        puts "You got #{score} correct! Lets start over!"
-        system("clear")
-        quiz_usa
+      puts "You got #{score} out of 4 correct! Not bad!"
+      puts ""
+      puts "Thats the end of the Journey..."
+      puts ""
+      puts "For now!"
+      puts "Lets see eachother again! See ya!"
+      sleep(0.5)
+      game_menu
+      puts "You got #{score} correct! Lets start over!"
+      system("clear")
+      quiz_usa
     end
-    
-
-
+end

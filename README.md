@@ -94,19 +94,26 @@ Testing were done however, there were minor issues which couldn't display anythi
 - If you do not have the 'bundler' gem installed on your computer, please enter the following code.
  
 ```ruby
-$ install bundler
+$ gem install bundler
 ```
 - In the terminal type in the below folders 
 
 ```ruby
-cd src/game_menu
+$ cd src
 ```
-- To activate the game enter the below. Make sure your volume is turned on for more personalised experience. 
 
+- Enter the following command to install the required gems.
+
+```ruby
+$ bundle install
+```
+
+- To activate the game enter the below. Make sure your volume is turned on for more personalised experience. 
 
 ```ruby
 ruby game_menu.rb
 ```
+
 ## Dependencies 
 
 The following Ruby Gems are required and are included in the Gemfile.

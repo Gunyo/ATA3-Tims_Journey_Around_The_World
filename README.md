@@ -109,8 +109,6 @@ ruby game_menu.rb
 ```
 ## Dependencies 
 
-Words of fortune utilise the following gems that are  Mac dependent and will not function on other operating systems.
-
 The following Ruby Gems are required and are included in the Gemfile.
 
 - gem "colorize", "~> 0.8.1"

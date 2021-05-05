@@ -79,7 +79,26 @@ Within the application the user may expect to receive error. This could be not i
 
 ## Testing 
 
-Testing were done however, there were minor issues which couldn't display anything from the code.
+In the testing stage, there was an issue where when the user either finishes the game, selects the about or the instructions option in the menu. The application wouldn't go back to its menu causing the user the close and reopen. This was resolved by implementing a 'loop' into the main menu screen.
+
+```ruby
+app = true
+while app
+  system("clear")
+  prompt = TTY::Prompt.new
+  welcome = prompt.select("Hello! Welcome to Tim's Journey Around the World!") do |menu|
+    menu.choice 'Start'
+    menu.choice 'Instructions'
+    menu.choice 'About'
+    menu.choice 'Exit'
+  end
+```
+
+![test](./img/test2.png)
+
+Upon having the application tested by a randomly selected person. The user were able to complete the game without coming accross any errors.
+
+![test](./img/test1.png)
 
 #
 ## Help documentation

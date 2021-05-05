@@ -22,7 +22,7 @@ def quiz_usa
     end
 
     prompt = TTY::Prompt.new
-    greeting = 'What is New York also refered to as?'
+    greeting = 'What is New York also referred to as?'
     choices = ["Big Banana", "Big Pineapple", "Big apple", "Big Everything"]
     answer = prompt.select(greeting, choices)
     if answer == choices[2]
@@ -66,7 +66,7 @@ def quiz_usa
       puts "Lets see eachother again! See ya!".colorize(:light_blue)
       print "Press 'enter' to go back to menu"
       gets
-    elsif score > 1
+    elsif score >= 3
       sleep(2)
       puts "You got #{score} out of 4 correct! Not bad!".colorize(:light_green)
       puts ""

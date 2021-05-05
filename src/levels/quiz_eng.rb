@@ -44,7 +44,7 @@ def quiz_eng
     end
 
     prompt = TTY::Prompt.new
-    greeting = 'On the streets of London, what color are the busses?'
+    greeting = 'On the streets of London, what color are the buses?'
     choices = %w(Blue Yellow Green Red)
     answer = prompt.select(greeting, choices)
     if answer == choices[3]
@@ -65,7 +65,7 @@ def quiz_eng
       print "Press 'enter' to proceed"
       gets
       quiz_usa
-    elsif score > 1
+    elsif score >= 3
       sleep(2)
       puts "You got #{score} out of 4 correct! Not bad!".colorize(:light_green)
       puts ""

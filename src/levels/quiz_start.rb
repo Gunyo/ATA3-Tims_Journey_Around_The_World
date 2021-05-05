@@ -65,7 +65,7 @@ def quiz_start
       print "Press 'enter' to proceed"
       gets
       quiz_jpn
-    elsif score > 1
+    elsif score >= 3
       sleep(2)
       puts "You got #{score} out of 4 correct! Not bad!".colorize(:light_green)
       puts ""
